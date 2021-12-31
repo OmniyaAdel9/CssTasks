@@ -1,0 +1,21 @@
+body{
+    margin: 20px;
+}
+
+div{
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.div1{
+    border-left: 5px solid rgb(243, 23, 126);
+}
+
+.div2{
+    visibility: hidden;
+}
+
+.div3{
+    border-left: 5px solid rgb(5, 189, 235);
+}

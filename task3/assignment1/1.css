@@ -1,0 +1,27 @@
+body{
+    margin: 20px;
+}
+
+div{
+    display: inline;
+    outline: 5px solid #000000;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.div1{
+    border: 5px solid red ;
+}
+
+
+.div2{
+    border: 5px solid;
+    border-color: blue green;
+}
+
+.div3{
+    border: 5px;
+    border-style: dashed  ;
+    border-color: red green blue yellow;
+}
