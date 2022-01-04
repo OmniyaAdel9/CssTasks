@@ -4,5 +4,5 @@ div{
     width: 400px;
     padding: 15px;
     height: 20px ;
-    overflow: hidden;
+    overflow-y: hidden;
 }
