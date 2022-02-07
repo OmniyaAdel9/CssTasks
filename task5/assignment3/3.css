@@ -1,0 +1,25 @@
+div{
+    color: black;
+    width: 400px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.div1{
+    white-space: normal;
+}
+
+.div2{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.div3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;  
+}
+
+.div3:hover{
+    overflow: visible;
+}
