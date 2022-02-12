@@ -1,0 +1,20 @@
+p{
+    background-color: rgb(245, 244, 244);
+    padding: 10px;
+    margin: 10% 22%;
+    height: 30px;
+    border-left: 3px solid rgb(209, 59, 129);
+}
+
+p::before{
+    content: attr(data-person);
+    background-color: rgb(221, 221, 221) ;
+    position: absolute;
+    margin-left: -100px;
+    padding: 5px;
+}
+
+
+
+
+

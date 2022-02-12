@@ -1,0 +1,33 @@
+p{
+    background-color: rgb(245, 244, 244);
+    padding: 10px;
+    margin: 8% 22%;
+    height: 30px;
+    counter-increment: p-count;
+}
+
+p::after{
+    content: attr(data-person);
+    background-color: rgb(238, 80, 80) ;
+    position: absolute;
+    right: 170px;
+    width: 5px;
+    margin-top:-10px ;
+    height: 50px;
+   
+}
+
+p::before{
+    content: counter(p-count);
+    color: white;
+    background-color: rgb(238, 80, 80) ;
+    position: absolute;
+    padding: 15.5px;
+    text-align: center;
+    margin-top:-10px ;
+    left: 135px;
+
+
+}
+
+
