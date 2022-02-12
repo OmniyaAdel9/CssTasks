@@ -1,0 +1,44 @@
+div{
+    padding: 10px;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    margin: 20%;
+    border: 3px solid;
+    border-color:rgb(221, 105, 105) rgb(107, 107, 240) ;
+    background-color: rgb(219, 212, 212);
+}
+
+span{
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    color: white;
+    background-color: rgb(27, 147, 202);
+}
+
+.top-left{
+    border-right: 3px solid rgb(221, 105, 105) ;
+    top: 18%;
+    left: 18%;
+}
+
+.bottom-left{
+    border-right: 3px solid rgb(221, 105, 105) ;
+    bottom: 51%;
+    left: 18%;
+}
+
+
+.top-right{
+    border-left: 3px solid rgb(221, 105, 105) ;
+    top: 18%;
+    right: 22%;
+}
+
+.bottom-right{
+    border-left: 3px solid rgb(221, 105, 105) ;
+    bottom: 51%;
+    right: 22%;
+}

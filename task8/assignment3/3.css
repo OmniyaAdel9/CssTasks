@@ -1,0 +1,38 @@
+.ul1{
+  width: 400px;
+  list-style: none;
+  margin: 20%;
+}
+
+.ul1 li{
+    padding: 5px;
+    margin-top: 15px;
+    background-color: rgb(216, 216, 216);
+}
+
+
+.ol1{
+    list-style: decimal outside;
+
+}
+
+.ol1 li{
+    background-color: white;
+}
+
+
+.ol2{
+    list-style: lower-roman outside;
+}
+
+.ol2 li{
+    background-color: white;
+}
+
+.ul2{
+    list-style: circle inside;
+}
+
+.ul2 li{
+    background-color: white;
+}

@@ -1,0 +1,50 @@
+div{
+    text-align: center;
+    margin: 5% 25%;
+}
+
+table{
+    width: 700px;
+}
+
+h3{
+    text-align: center;
+}
+
+thead{
+    background-color: rgb(107, 107, 107);
+}
+
+thead td{
+    color: white;
+    padding: 6px 20px;
+    font-weight: bold
+}
+
+tbody{
+    background-color: rgb(230, 228, 228);
+}
+
+tbody td{
+    padding: 7px 18px;
+}
+
+a{
+    color: white;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.a1{
+    background-color: rgb(9, 170, 219);
+}
+
+.a2{
+    background-color: rgb(194, 21, 73);
+}
+
+td img{
+    width: 70px;
+    height: 70px;
+}
