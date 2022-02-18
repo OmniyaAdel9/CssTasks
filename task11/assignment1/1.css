@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.div1{
+    width: 600px;
+    height: 300px;
+    padding: 30px;
+    margin: 110px;
+    margin-top: 110px;
+    background-color: rgb(236, 233, 233);
+    transition: margin-top 0.5s 0s ease-in ;
+    -webkit-transition: margin-top 0.5s 0s ease-in ;
+    -moz-transition: margin-top 0.5s 0s ease-in ;
+    -ms-transition: margin-top 0.5s 0s ease-in ;
+    -o-transition: margin-top 0.5s 0s ease-in ;
+}
+
+.div1:hover{
+    margin-top: 90px;
+}
+
+.div1 div{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+
+.div1 .div3{
+    background-color: rgb(202, 202, 202);
+    width: 350px;
+    height: 80px;
+    padding: 27px;
+    margin-left: 100px;
+    margin-top: 50px;
+    transition: margin-top 0.5s 0.5s ease-in ;
+    -webkit-transition: margin-top 0.5s 0.5s ease-in ;
+    -moz-transition: margin-top 0.5s 0.5s ease-in ;
+    -ms-transition: margin-top 0.5s 0.5s ease-in ;
+    -o-transition: margin-top 0.5s 0.5s ease-in ;
+}
+
+.div1 .div3:hover{
+    margin-top: 70px;
+}
