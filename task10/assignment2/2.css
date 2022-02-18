@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 40%;
+    border: 1px solid rgb(143, 143, 143);
+    border-top-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    box-shadow: 0px 0px 6px 6px gray inset;
+}

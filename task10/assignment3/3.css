@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+
+.parent{
+    display: inline-flex;
+    margin: 200px;
+    width: 550px;
+}
+
+
+.div1,
+.div4{
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+
+    background-color: rgb(235, 229, 229);
+}
+
+.div1{
+    margin-left: 50px;
+}
+
+.div1::before{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 2px;
+    top: 200px;
+    left: 515px;
+    background-color: rgb(77, 219, 238);
+}
+
+.div4{
+    margin-left: 70px;
+}
+
+.div4::after{
+    content: "Or";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    top: 330px;
+    right: 236px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(77, 219, 238);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+.div2,
+.div5{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(8, 159, 201);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.div3,
+.div6{
+    background-color: rgb(197, 194, 194);
+    color: black;
+    font-size: 30px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
