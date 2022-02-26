@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --backcolor:#ff5722;
+    --textcolor:white;
+}
+
+h1{
+    background-color: var(--backcolor);
+    color: var(--textcolor);
+    width: 150px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+h1::before,
+h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backcolor);
+    z-index: -1;
+    left: 0;
+    top: 0;
+
+}
+
+h1::before{
+    transform: skew(10deg,10deg);
+    -webkit-transform: skew(10deg,10deg);
+    -moz-transform: skew(10deg,10deg);
+    -ms-transform: skew(10deg,10deg);
+    -o-transform: skew(10deg,10deg);
+}
+
+h1::after{
+    transform: skew(-10deg,-10deg);
+    -webkit-transform: skew(-10deg,-10deg);
+    -moz-transform: skew(-10deg,-10deg);
+    -ms-transform: skew(-10deg,-10deg);
+    -o-transform: skew(-10deg,-10deg);
+}

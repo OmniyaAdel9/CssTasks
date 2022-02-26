@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+div{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgb(207, 207, 207);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border: 10px solid;
+    border-color: transparent rgb(145, 39, 130) transparent rgb(241, 83, 83);
+}
+
+div::first-letter{
+    color: rgb(241, 83, 83);
+}
+
+div::before{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 10px;
+    left: 84px;
+    top: 50px;
+    background-color: aqua;
+    background-image:linear-gradient( to right ,rgb(241, 83, 83) 20%,
+    rgb(10, 152, 207) 20% ,rgb(10, 152, 207)  40%,
+    rgb(100, 192, 92) 40%,rgb(100, 192, 92) 60% ,
+    rgb(240, 54, 184) 60% , rgb(240, 54, 184) 80% ,
+    rgb(145, 39, 130) 80% , rgb(145, 39, 130) 100% );   
+}
+
+div::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 10px;
+    left: 84px;
+    top: 126px;
+    background-color: aqua;
+    background-image:linear-gradient( to right ,rgb(241, 83, 83) 20%,
+    rgb(10, 152, 207) 20% ,rgb(10, 152, 207)  40%,
+    rgb(100, 192, 92) 40%,rgb(100, 192, 92) 60% ,
+    rgb(240, 54, 184) 60% , rgb(240, 54, 184) 80% ,
+    rgb(145, 39, 130) 80% , rgb(145, 39, 130) 100% );   
+}

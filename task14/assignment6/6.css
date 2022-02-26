@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    gap: 15px 15px;
+}
+.parent div{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+.parent .three,
+.parent .five,
+.parent .eight{
+    background-color: black;
+    color: white;
+}
+.one{
+    grid-area: 1 / 1 / span 3 / span 2;
+}
+.two{
+    grid-area: 1 / 3 / span 3 / 4;
+}
+.three{
+    grid-area: 1 / 4 / span 11 / 5;
+}
+.four{
+    grid-area: 4 / 1 / span 8 / 2;
+}
+.five{
+    grid-area: 4 / 2 / span 4 / span 2;
+}
+.six{
+    grid-area: 8 / 2 / span 4 / span 2;
+}
+.seven{
+    grid-area: 12/ 1 / span 2 / 2;
+}
+.eight{
+    grid-area: 12 / 2 / span 2 / 3;
+}
+.nine{
+    grid-area: 12 / 3 / span 2 / 4;
+}
+.ten{
+    grid-area: 12 / 4 / span 2 / 5;
+}
+h4{
+    margin-bottom: 10px;
+}
+h5{
+    margin-bottom: 15px;
+    opacity: 50%;
+}
+.parent div::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #fb5a27;
+    left: 0;
+    bottom: 0;
+}
+.parent div::after{
+    content: "''";
+    color: #ccc;
+    position: absolute;
+    font-size: 65px;
+    right: 10px;
+    bottom: -30px;
+    transform: rotate(12deg);
+}

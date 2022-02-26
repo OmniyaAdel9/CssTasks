@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+form{
+    margin: auto;
+    margin-top: 100px;
+    
+}
+
+input{
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    display: block;
+    font-size: 17px;
+    background-color: rgb(206, 208, 209);
+    caret-color: rgb(241, 83, 83) ;
+    outline: none;
+}
+
+
+.div1::before{
+    content:"";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    top: 70px;
+    left: 50px;
+    background-image:linear-gradient( to right ,rgb(241, 83, 83) 50%,
+    rgb(11, 114, 155)  50% ,rgb(11, 114, 155)  100% ) ;
+}
+
+.div2::before{
+    content:"";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    top: 135px;
+    left: 50px;
+    background-image:linear-gradient( to right ,rgb(241, 83, 83) 50%,
+    rgb(11, 114, 155)  50% ,rgb(11, 114, 155)  100% ) ;
+}
+
+.div3::before{
+    content:"";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    top: 210px;
+    left: 50px;
+    background-image:linear-gradient( to right ,rgb(241, 83, 83) 50%,
+    rgb(11, 114, 155)  50% ,rgb(11, 114, 155)  100% ) ;
+}
