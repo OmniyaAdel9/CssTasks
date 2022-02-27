@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.assign-3 .parent > div:only-child{
+    color: red;
+}

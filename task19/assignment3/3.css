@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.parent-2 div{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+.parent-2 div h3{
+    text-align: center;
+    color: #009688;
+}
+.parent-2 div p{
+    text-align: center;
+}
+.parent-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* mobile */
+@media (min-width: 300px) and (max-width:599px){
+    .parent-2 div{
+        width: calc(100% - 5px);
+    }
+    .parent-2 div h3{
+        color: black;
+    }
+}
+/* medium screens */
+@media (min-width: 600px){
+    .parent-2 div{
+        width: calc(50% - 10px);
+    }
+    .parent-2 div h3{
+        color: red;
+    }
+    .parent-2 div p{
+        font-size: 20px;
+    }
+    .parent-2 .one-1{
+        width: calc(100% - 5px);
+    }
+    .parent-2 .two-2,
+    .parent-2 .three-3,
+    .parent-2 .four-4{
+        width: calc(33.5% - 5px);
+    }
+}
+/* Large screens */
+
+@media (min-width: 800px){
+    .parent-2 div{
+        width: calc(25% - 5px);
+    }
+    .parent-2 div h3{
+        color: #009688;
+    }
+    .parent-2:first-child{
+        width: calc(100% - 5px);
+    }
+    .parent-2 .two-2,
+    .parent-2 .three-3{
+        width: calc(50% - 5px);
+    }
+    .parent-2 .four-4{
+        width: calc(100% - 5px);
+    }
+}

@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    grid-template-rows: auto;
+    gap: 15px 15px;
+    position: relative;
+}
+.E div,
+.L div{
+    background-color: #363234;
+}
+.E,
+.L{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(7, 50px);
+}
+.one{
+    grid-area: 1 / 1 / 2 / span 4;
+}
+.two{
+    grid-area: 2 / 1 / span 2 / 2;
+}
+.three{
+    grid-area: 4 / 1 / 5 / span 4;
+}
+.four{
+    grid-area: 5 / 1 / span 2 / 2;
+}
+.five{
+    grid-area: 7 / 1 / 8 / span 4;
+}
+.first{
+    grid-area: 1 / 1 / span 6 / 2;
+}
+.second{
+    grid-area: 7 / 1 / 8 / span 4;
+}
+.parent::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    left: 150px;
+    top: 5px;
+    animation-name: move-e;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+.parent::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fea604;
+    right: 55px;
+    bottom: 55px;
+    opacity: 0;
+    animation-name: move-l;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function: linear;
+}
+@keyframes move-e{
+    0%{
+        left: 150px;
+        top: 5px;
+    }
+    10%{
+        top: 5px;
+        left: 5px;
+    }
+    20%{
+        left: 5px;
+        top: 155px;
+    }
+    30%{
+        top: 155px;
+        left: 150px;
+    }
+    40%{
+        left: 5px;
+        top: 155px;
+    }
+    50%{
+        left: 5px;
+        top: 305px;
+    }
+    60%{
+        top: 305px;
+        left: 150px;
+    }
+    70%{
+        left: 5px;
+        top: 305px;
+    }
+    90%{
+        top: 5px;
+        left: 5px;
+    }
+    100%{
+        left: 150px;
+        top: 5px;
+    }
+}
+@keyframes move-l{
+    0%{
+        right: 55px;
+        bottom: 55px;
+        opacity: 0;
+    }
+    10%{
+        right: 55px;
+        bottom: 55px;
+        opacity: 1;
+    }
+    30%{
+        bottom: 55px;
+        right: 200px;
+        opacity: 1;
+    }
+    90%{
+        right: 200px;
+        bottom: 350px;
+        opacity: 1;
+    }
+    100%{
+        right: 200px;
+        bottom: 350px;
+        opacity: 0;
+    }
+}

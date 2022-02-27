@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+.assign-one{
+    font-size: 20px;
+}
+@media print {
+    .assign-one{
+        font-size: 40px;
+    }
+}
+

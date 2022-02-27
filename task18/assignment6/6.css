@@ -1,0 +1,10 @@
+*{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.assign-6 div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+}
